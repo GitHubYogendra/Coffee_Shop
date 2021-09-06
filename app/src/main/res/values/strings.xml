@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Coffee Shop</string>
+    <string name="tooping">TOOPING</string>
+    <string name="plus_symbol">+</string>
+    <string name="zero">0</string>
+    <string name="minus_symbol">-</string>
+    <string name="order_summary">ORDER SUMMARY</string>
+    <string name="cost_zero">$0</string>
+    <string name="view">VIEW</string>
+    <string name="name">Name</string>
+    <string name="whipped_cream">Whipped cream</string>
+    <string name="email_id_yogendrakgowda006_gmail_com">email id = yogendrakgowda006@gmail.com</string>
+    <string name="order">ORDER</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">QUANTITY</string>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcdd2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/toi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTextEmailAddress"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="6dp"
+            android:text="@string/tooping"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clickbox"
+            android:layout_marginTop="9dp"
+            android:text="@string/quantity"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/text_view"
+            android:onClick="submitPlus"
+            android:text="@string/plus_symbol"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@id/minus"
+            android:paddingLeft="16dp"
+            android:paddingTop="6dp"
+            android:paddingRight="16dp"
+            android:text="@string/zero"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="8dp"
+            android:onClick="submitMinus"
+            android:text="@string/minus_symbol"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minus"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="6dp"
+            android:text="@string/order_summary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_price"
+            android:layout_marginTop="14dp"
+            android:text="@string/cost_zero"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cost"
+            android:layout_marginTop="9dp"
+            android:onClick="submitOrder"
+            android:text="@string/view"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+        <EditText
+            android:id="@+id/tex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/name"
+            android:inputType="textCapWords"
+            android:minHeight="48dp" />
+
+        <CheckBox
+            android:id="@+id/click"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toi"
+            android:layout_marginTop="4dp"
+            android:onClick="click"
+            android:text="@string/whipped_cream"
+            tools:ignore="UsingOnClickInXml" />
+
+        <CheckBox
+            android:id="@+id/clickbox"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/click"
+            android:layout_marginTop="0dp"
+            android:onClick="clickbox"
+            android:text="@string/chocolate"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tex"
+            android:layout_marginTop="7dp"
+            android:text="@string/email_id_yogendrakgowda006_gmail_com"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/CONFORM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:onClick="conform"
+            android:text="@string/order"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+
+    </RelativeLayout>
+</ScrollView>
+
